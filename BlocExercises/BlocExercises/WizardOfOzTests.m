@@ -40,7 +40,7 @@
 - (void)testTheMainCharacterIsCorrect
 {
     NSString *mainCharacter = [self.wonderfulWizard mainCharacter];
-   XCTAssertEqualObjects(mainCharacter, @"Dorothy", @"Incorrect main character string returned.");
+    XCTAssertEqualObjects(mainCharacter, @"Dorothy", @"Incorrect main character string returned.");
 }
 
 @end
