@@ -47,7 +47,7 @@
     
 //    NSLog(@"%@", numArray);
     
-    return (NSInteger)[numArray objectAtIndex:0];
+    return [[numArray objectAtIndex:0] integerValue];
 }
 
 @end
