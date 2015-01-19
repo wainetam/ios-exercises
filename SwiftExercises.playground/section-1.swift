@@ -69,9 +69,9 @@ let characters = [worf, picard]
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
-    var drinkArray : Array<String>
+    var drinkArray : [String] = []
+    
 //    var drinkArray = [];
-    drinkArray = []
     
     for character in characters {
         drinkArray.append(character["favorite drink"]!) //QUESTION what are optionals ? and !
@@ -97,7 +97,7 @@ let strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
 func concatWithSemi(items: Array<String>) -> String {
-    var finalString = "" // can't do finalString : String  QUESTION
+    var finalString : String = "" // can't do finalString : String  QUESTION
     for var i = 1; i <= items.count; i++ {
         finalString += items[i]
         if (i != items.count) {
